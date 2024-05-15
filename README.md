@@ -180,13 +180,18 @@ Idea is that if many developers are working at a time on project, no one should 
 There are 2 ways to do that
 
 1. using git
+<<<<<<< HEAD
 - `git diff <branch_name from which we need to see the diff>` - to compare commits, branches files and more from current to another one. Press `q` to exit the difference section on terminal
+=======
+- `git diff <branch_name from which we need to see the diff>` - to compare commits, branches files and more from current to another one
+>>>>>>> feature1
 - `git merge <branch_name in which we need to merge>` - to merge 2 branches (currently it will show different in helloworld.py file, the code or line in red means it is removed and green means, its added)
 
 2. Create a PULL REQUEST (PR) - It lets you tell others about changes you've pushed to a branch in a repo on GITHUB.
 
 Although it's better to use PULL REQUEST when working in team environment since, it is possible that every time you create some feature in some other branches apart from main, senior developers review your code before merging the features into the main branch
 
+<<<<<<< HEAD
 ### Pull Command
 Sometimes, when you make changes in the github repo directly, like merging the pull request, changes in some readme etc, those changes will only reflect on github but won't reflect on your local machine, to make the changes done in repo visible on your local system, you can use 
 pull command
@@ -197,5 +202,7 @@ pull command
 An event that takes place when Git is automatically unable to resolve differences in code between two commits
 Suppose you commit some changes in branch "A" and commit some changes at exactly same place in branch "B" and try to merge those two, Git won't be able to automatically merge those files. NOTE THAT THOSE CHANGES SHOULD BE COMMITTED IN BOTH THE BRANCHES AT THE SAME PLACE.
 
+=======
+>>>>>>> feature1
 
 
