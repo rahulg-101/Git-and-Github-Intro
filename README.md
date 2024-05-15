@@ -28,5 +28,31 @@ You can go on the edit option, do some editing and select commit changes. You ma
 1. Download VS CODE
 2. Download GITBASH (ON WINDOWS) / TERMINAL (ON MAC)
 
-Once installed, check for git version using 
->git --version
+Once installed, check for git version using git bash
+> `git --version`
+This will output the version and will confirm installation of git on your system
+
+You can also run a few scripts like `ls` - This will output all the folders and files in your current directory, `pwd` - will provide current directly path, '`clear` - to clear output on the git bash terminal.
+
+
+### Step 3 - Configuring GIT
+Telling GIT which account do we need to make changes on github
+
+1. Setting USER NAME
+- `git config -- global user.name "Your_User_Name`
+
+2. Setting EMAIL
+- `git config -- global user.email "email_address`
+
+3. To check the status of setup
+- `git config --list`
+
+<span style="color:red">You can also use the git commands in your VS CODE Terminal </span>
+
+### GIT COMMANDS
+1. clone - cloning a repository on our local machine
+  - `git clone <-some link>
+  - Go to your repo, click on code button (in green) select HTTPS block and copy the link there and use that link in the clone command to copy your repo in local machine
+
+2. status - getting the status of your 
+
