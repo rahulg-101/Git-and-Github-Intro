@@ -137,4 +137,22 @@ Telling GIT which account do we need to make changes on github
         ```
 6. push - upload local repo content to remote repo
   - `git push origin main`
+  - Here origin is used as an alias for the remote repo present on github
+  - main refers to the branch
+
+7. init - Used to create a new git repo. Suppose we have a new project that we start working on in our local machine only and then we want to create a new repo and use git to create this new repo and push or do other operations on github
+  a. `git init`
+  (For this step, I have created a local folder called `local_repo` in my machine using `mkdir <folder_name>` command in terminal )
+  now ran `git init` command to make this a **git repo**, to confirm, check the hidden files which should contain a `.git` folder
+
+  Now I have created 1 python file in this local_repo, now to push this file on our github, you need to create a new repo,I am creating this new repo with name new_repo_git_github
+
+  b. `git remote add origin <link>` - So that we can add the local repo to the github remote repo by providing its link. Also from now on, we will refer to this repo as **"origin"** from now on.
+  c  `git remote -v` - to cross check which repo are we currently referring to here. It should return the repo link of the one which we are currently using.
+  d. `git branch` - to check branch
+  e. `git branch -M <new_name>` - to change the name of the current branch
+  f. `git push -u origin main` - Although we could ignore "-u" but this will help git to always use origin repo main branch whenever we do push operation next time so we don't have to specifiy repo and branch and just use `git push` the next time.
+
+8. Changing git origin - You can change the repo to which "origin" is refering to 
+  - `git remote set-url origin <repo HTTPS link>`
   
