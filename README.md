@@ -75,63 +75,66 @@ Telling GIT which account do we need to make changes on github
 5. commit - it is the record of change
   - `git commit -m "some message" 
 
-### At this step, I have made some changes in the README.md file and added a new file called helloworld.py and following is the status changes occuring as I proceed and the order of how we need to process these commands
-```
-  PS C:\Users\rahul gupta\Documents\Learning\Git and Github\Git-and-Github-Intro> git status
-On branch main
-Your branch is up to date with 'origin/main'.
+        ### At this step, I have made some changes in the README.md file and added a new file called helloworld.py and following is the status changes occuring as I proceed and the order of how we need to process these commands
+        ```
+          PS C:\Users\rahul gupta\Documents\Learning\Git and Github\Git-and-Github-Intro> git status
+        On branch main
+        Your branch is up to date with 'origin/main'.
 
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   README.md
+        Changes not staged for commit:
+          (use "git add <file>..." to update what will be committed)
+          (use "git restore <file>..." to discard changes in working directory)
+                modified:   README.md
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        helloworld.py
+        Untracked files:
+          (use "git add <file>..." to include in what will be committed)
+                helloworld.py
 
-no changes added to commit (use "git add" and/or "git commit -a")
-PS C:\Users\rahul gupta\Documents\Learning\Git and Github\Git-and-Github-Intro> git status
-On branch main
-Your branch is up to date with 'origin/main'.
+        no changes added to commit (use "git add" and/or "git commit -a")
+        PS C:\Users\rahul gupta\Documents\Learning\Git and Github\Git-and-Github-Intro> git status
+        On branch main
+        Your branch is up to date with 'origin/main'.
 
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   README.md
+        Changes not staged for commit:
+          (use "git add <file>..." to update what will be committed)
+          (use "git restore <file>..." to discard changes in working directory)
+                modified:   README.md
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        helloworld.py
+        Untracked files:
+          (use "git add <file>..." to include in what will be committed)
+                helloworld.py
 
-no changes added to commit (use "git add" and/or "git commit -a")
-PS C:\Users\rahul gupta\Documents\Learning\Git and Github\Git-and-Github-Intro> git add helloworld.py
-PS C:\Users\rahul gupta\Documents\Learning\Git and Github\Git-and-Github-Intro> git status
-On branch main
-Your branch is up to date with 'origin/main'.
+        no changes added to commit (use "git add" and/or "git commit -a")
+        PS C:\Users\rahul gupta\Documents\Learning\Git and Github\Git-and-Github-Intro> git add helloworld.py
+        PS C:\Users\rahul gupta\Documents\Learning\Git and Github\Git-and-Github-Intro> git status
+        On branch main
+        Your branch is up to date with 'origin/main'.
 
-Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
-        new file:   helloworld.py
+        Changes to be committed:
+          (use "git restore --staged <file>..." to unstage)
+                new file:   helloworld.py
 
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   README.md
+        Changes not staged for commit:
+          (use "git add <file>..." to update what will be committed)
+          (use "git restore <file>..." to discard changes in working directory)
+                modified:   README.md
 
-PS C:\Users\rahul gupta\Documents\Learning\Git and Github\Git-and-Github-Intro> git add README.md
-PS C:\Users\rahul gupta\Documents\Learning\Git and Github\Git-and-Github-Intro> git status
-On branch main
-Your branch is up to date with 'origin/main'.
+        PS C:\Users\rahul gupta\Documents\Learning\Git and Github\Git-and-Github-Intro> git add README.md
+        PS C:\Users\rahul gupta\Documents\Learning\Git and Github\Git-and-Github-Intro> git status
+        On branch main
+        Your branch is up to date with 'origin/main'.
 
-Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
-        modified:   README.md
-        new file:   helloworld.py
+        Changes to be committed:
+          (use "git restore --staged <file>..." to unstage)
+                modified:   README.md
+                new file:   helloworld.py
 
-PS C:\Users\rahul gupta\Documents\Learning\Git and Github\Git-and-Github-Intro> git commit -m "NEW- Updated Files"
-[main 8f7941d] NEW- Updated Files
- 2 files changed, 17 insertions(+), 4 deletions(-)
- create mode 100644 helloworld.py
-PS C:\Users\rahul gupta\Documents\Learning\Git and Github\Git-and-Github-Intro>
-```
+        PS C:\Users\rahul gupta\Documents\Learning\Git and Github\Git-and-Github-Intro> git commit -m "NEW- Updated Files"
+        [main 8f7941d] NEW- Updated Files
+        2 files changed, 17 insertions(+), 4 deletions(-)
+        create mode 100644 helloworld.py
+        PS C:\Users\rahul gupta\Documents\Learning\Git and Github\Git-and-Github-Intro>
+        ```
+6. push - upload local repo content to remote repo
+  - `git push origin main`
+  
