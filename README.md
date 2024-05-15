@@ -19,6 +19,14 @@ Website that allows developers to store and manage their code using GIT.We uploa
 
 You will see a readme.md file once a repo is created
 
-**Readme** file is stored as Readme.md where `".md"` stands for `markdown`, there is a message against the README.md file on slight right, upon initial setting up of repo, this will always contain the message `"Initia commit"`
+**Readme** file is stored as Readme.md where `".md"` stands for `markdown`, there is a message against the README.md file on slight right, upon initial setting up of repo, this will always contain the message `"initial commit"`
 
 You can go on the edit option, do some editing and select commit changes. You may additionally add a message while doing this change which will reflect on the repo as well
+
+
+### Step 2 - Setting up GIT
+1. Download VS CODE
+2. Download GITBASH (ON WINDOWS) / TERMINAL (ON MAC)
+
+Once installed, check for git version using 
+>git --version
