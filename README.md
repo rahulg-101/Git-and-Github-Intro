@@ -159,3 +159,15 @@ Telling GIT which account do we need to make changes on github
 ## WorkFlow
 When working with Local Git follow the following workflow 
 > Create Github Repo -> clone -> do changes as per your project -> add -> commit -> push
+
+## Git Branches
+You can think of Github branches as part of project carved out by different teams working on different functionalities of project, forming a sort of tree structure where your main branch or tree is your whole project, sub branches are teams like frontend,backend, database, testing etc.
+
+Idea is that if many developers are working at a time on project, no one should wait for others to complete their tasks to start performing their own, instead, they make a copy or carve out some of the project feature or code then work on it. Once one completes it's task, they then merge the branch with the original main branch.
+
+### Branch Commands
+1. `git branch` - To check current branch
+2. `git branch -M <new_name>` - to rename branch
+3. `git checkout <other branch name>` - to navigate to some other branch
+4. `git checkout -b <new_branch_name>` - to create a new branch. When you run git branch command after this, you can see other branches with current one highlighted in some color
+5. `git branch -d <branch_name>` - to delete branch **but you cannot delete the branch you're currently on**
