@@ -219,4 +219,5 @@ Case 3 - Commited changes (for many commits)
 - `git reset <commit hash>`  - hash is the highlighted id in the git log
 - `git reset --hard <commit hash>`
 
-
+### FORK
+Fork is creating a rough copy, probably you make some changes on the original repo from which you have forked the repo, then create pull requests so that it can be merged into the original repo obviously with the approval of the original owner.
