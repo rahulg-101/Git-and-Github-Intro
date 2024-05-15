@@ -58,13 +58,80 @@ Telling GIT which account do we need to make changes on github
   - `git status`
   - Suppose you have made some changes in your project (in any file), and saved it, then although the changes have been made locally in the system, they will not reflect on the github repo. When you use the `git status` command, it will reflect which files have been changed or modified, are they up-to-date or require some additional operations.
 
-Whenever you modified or changed somethin in your project, from there it is a two step process : 
-1. Add 
-2. Commit
-If you do not use these two commands, the status will keep on showing there are some modified files in the project
+    Whenever you modified or changed somethin in your project, from there it is a two step process : 
+    1. Add 
+    2. Commit
+    If you do not use these two commands, the status will keep on showing there are some modified files in the project
 
-There are 4 kinds of statuses that `git status` will show
-1. Untracked - You added a new file, saved it but haven't added and commit it to the main brand
-2. modified - some changes in the previously present files in repo
-3. staged - file is added but not committed in the repo
-4. unmodified - unchanged
+    There are 4 kinds of statuses that `git status` will show
+    1. Untracked - You added a new file, saved it but haven't added and commit it to the main brand
+    2. modified - some changes in the previously present files in repo
+    3. staged - file is added but not committed in the repo
+    4. unmodified - unchanged
+
+4. Add - adds new or changed files in your working directory to the GIT staging area
+  - `git add <file_name>` or you can use `git add . (remember to provide a space characted between add and .)`
+
+5. commit - it is the record of change
+  - `git commit -m "some message" 
+
+### At this step, I have made some changes in the README.md file and added a new file called helloworld.py and following is the status changes occuring as I proceed and the order of how we need to process these commands
+```
+  PS C:\Users\rahul gupta\Documents\Learning\Git and Github\Git-and-Github-Intro> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        helloworld.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\rahul gupta\Documents\Learning\Git and Github\Git-and-Github-Intro> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        helloworld.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\rahul gupta\Documents\Learning\Git and Github\Git-and-Github-Intro> git add helloworld.py
+PS C:\Users\rahul gupta\Documents\Learning\Git and Github\Git-and-Github-Intro> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   helloworld.py
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+PS C:\Users\rahul gupta\Documents\Learning\Git and Github\Git-and-Github-Intro> git add README.md
+PS C:\Users\rahul gupta\Documents\Learning\Git and Github\Git-and-Github-Intro> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+        new file:   helloworld.py
+
+PS C:\Users\rahul gupta\Documents\Learning\Git and Github\Git-and-Github-Intro> git commit -m "NEW- Updated Files"
+[main 8f7941d] NEW- Updated Files
+ 2 files changed, 17 insertions(+), 4 deletions(-)
+ create mode 100644 helloworld.py
+PS C:\Users\rahul gupta\Documents\Learning\Git and Github\Git-and-Github-Intro>
+```
