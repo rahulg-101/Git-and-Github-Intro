@@ -49,7 +49,7 @@ Telling GIT which account do we need to make changes on github
 
 ### <span style= 'color:red'>You can also use the git commands in your VS CODE Terminal </span>
 
-### GIT COMMANDS
+## GIT COMMANDS
 1. clone - cloning a repository on our local machine
   - `git clone <-some link>`
   - Go to your repo, click on code button (in green) select HTTPS block and copy the link there and use that link in the clone command to copy your repo in local machine
@@ -155,4 +155,7 @@ Telling GIT which account do we need to make changes on github
 
 8. Changing git origin - You can change the repo to which "origin" is refering to 
   - `git remote set-url origin <repo HTTPS link>`
-  
+
+## WorkFlow
+When working with Local Git follow the following workflow 
+> Create Github Repo -> clone -> do changes as per your project -> add -> commit -> push
